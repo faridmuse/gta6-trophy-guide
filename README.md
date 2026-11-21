@@ -3,6 +3,9 @@
 [![make.fun](https://img.shields.io/badge/make.fun-gta6--trophy--guide--01-ff6b4a)](https://make.fun/c/gta6-trophy-guide-01)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Offline](https://img.shields.io/badge/offline-static%20files-7fd6a4)](app/index.html)
+[![make.fun · gta6-trophy-guide-01](https://make.fun/badge/gta6-trophy-guide-01.svg)](https://make.fun/bounty/gta6-trophy-guide-01?utm_source=github&utm_medium=readme&utm_campaign=gta6-trophy-guide-01)
+[![rank](https://make.fun/badge/gta6-trophy-guide-01/faridmuse/gta6-trophy-guide/rank.svg)](https://make.fun/bounty/gta6-trophy-guide-01/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=gta6-trophy-guide-01)
+[![reward](https://make.fun/badge/gta6-trophy-guide-01/faridmuse/gta6-trophy-guide/reward.svg)](https://make.fun/bounty/gta6-trophy-guide-01?utm_source=github&utm_medium=readme&utm_campaign=gta6-trophy-guide-01)
 
 An offline guide and tracker for all **55 PlayStation 5 trophies** of Grand Theft Auto VI
 (1 platinum, 2 gold, 6 silver, 46 bronze, 28 hidden), built for the
