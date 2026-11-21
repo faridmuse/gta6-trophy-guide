@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Leonida Trophy Guide — GTA VI (55 trophies, offline)</title>
+<meta name="description" content="Offline guide and tracker for all 55 PlayStation 5 trophies of Grand Theft Auto VI: official names, descriptions and grades, saved checklist, roadmap to the platinum, missables, and a cited guide for every trophy.">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="top">
+  <div class="title">
+    <h1>Leonida Trophy Guide</h1>
+    <p class="sub">Grand Theft Auto VI &middot; PlayStation 5 &middot; 55 trophies &middot; works offline</p>
+  </div>
+  <div class="progress" id="progressBox" aria-live="polite">
+    <div class="big"><span id="earnedCount">0</span><span class="of">/ 55</span></div>
+    <div class="bar"><div class="fill" id="progressFill" style="width:0%"></div></div>
+    <p class="pct" id="progressPct">0% to the platinum</p>
+    <p class="grades" id="gradeCounts"></p>
+  </div>
+</header>
+
+<nav class="tabs" aria-label="Sections">
+  <a href="#checklist" data-view="checklist">Checklist</a>
+  <a href="#roadmap" data-view="roadmap">Roadmap to Platinum</a>
+  <a href="#missables" data-view="missables">Missables</a>
+  <a href="#sources" data-view="sources">Sources &amp; Method</a>
+</nav>
+
+<section class="toolbar" id="toolbar">
+  <label class="search">Search <input id="search" type="search" placeholder="Trophy, mission, or keyword…" autocomplete="off"></label>
+  <label>Kind
+    <select id="kind">
+      <option value="all">All kinds</option>
+      <option value="story">Story</option>
+      <option value="missable">Missable</option>
+      <option value="strangers">Strangers &amp; Freaks</option>
+      <option value="collectibles">Collectibles</option>
+      <option value="activities">Activities</option>
+      <option value="crime">Crime &amp; combat</option>
+      <option value="money">Money &amp; property</option>
+      <option value="exploration">Exploration</option>
+      <option value="secrets">Secrets</option>
+      <option value="completion">100% completion</option>
+    </select>
+  </label>
+  <label>Grade
+    <select id="grade">
+      <option value="all">All grades</option>
+      <option value="platinum">Platinum</option>
+      <option value="gold">Gold</option>
+      <option value="silver">Silver</option>
+      <option value="bronze">Bronze</option>
+    </select>
+  </label>
+  <label class="check"><input id="spoiler" type="checkbox" checked> Hide story trophies until earned</label>
+  <label class="check"><input id="earnedOnly" type="checkbox"> Earned only</label>
+  <span class="spacer"></span>
+  <button id="exportBtn" type="button">Export progress</button>
+  <label class="importBtn">Import progress <input id="importFile" type="file" accept="application/json,.json"></label>
+  <button id="resetBtn" type="button">Reset</button>
+</section>
+
+<main>
+  <section id="view-checklist" class="view">
+    <div class="columns">
+      <div class="listCol">
+        <p class="count" id="listCount"></p>
+        <ul class="trophies" id="trophyList"></ul>
+        <p class="empty" id="emptyMsg" hidden>No trophies match these filters. Clear the search or change the kind.</p>
+      </div>
+      <aside class="detail" id="detail" aria-live="polite"></aside>
+    </div>
+  </section>
+
+  <section id="view-roadmap" class="view" hidden>
+    <h2>Roadmap to the platinum</h2>
+    <p class="lede">One playthrough is enough — every trophy is offline single-player, and there are no online trophies. Work the stages in order; the story first, then the side content, then the clean-up. The only thing to do early is the meditation trophy (see Missables). Using cheats disables trophies, so leave them off for the whole run.</p>
+    <ol class="stages" id="roadmapStages"></ol>
+    <p class="note">Roadmap built from the official descriptions: which story chapters and missions, which collectibles and counts, in what order. Estimated time: the story alone runs about 60 hours (per reviews cited by Planet GTA 6); the platinum is estimated at around 200 hours, mostly because of 100% completion.</p>
+  </section>
+
+  <section id="view-missables" class="view" hidden>
+    <h2>Missable trophies</h2>
+    <p class="lede">Only one trophy is flagged as possibly missable by any guide — and even that one is not confirmed. Everything else can be finished after the story.</p>
+    <div class="missCard" id="missableList"></div>
+    <h3>Why so few?</h3>
+    <p>Story trophies unlock automatically when their chapter or mission ends, and they cannot be skipped. Activities, races, robberies, collectibles and money trophies all stay open in free roam after the story, and the 100% completion trophy is pure post-game clean-up. The honest state of knowledge, as of the game launching on 19 November 2026: Planet GTA 6 says there is no reliable list of missable trophies yet, while PowerPyx and GTABase flag one — meditation. This guide flags that one and says plainly where the evidence ends.</p>
+    <h3>Safe habits for a trophy run</h3>
+    <ul class="habits">
+      <li>Keep a few manual saves before the big missions (Planet GTA 6's standing advice while no reliable missables list exists).</li>
+      <li>Meditate at every spot the moment you find it — do not leave Positive Mental Attitude for the post-game.</li>
+      <li>Start every stranger strand as soon as it appears on the map, so none is left to find later.</li>
+      <li>Do not use cheats: they disable trophies and saving (PowerPyx, via Planet GTA 6).</li>
+      <li>Finish open side content before the final mission — it is the natural point of no return.</li>
+    </ul>
+  </section>
+
+  <section id="view-sources" class="view" hidden>
+    <h2>Sources &amp; method</h2>
+    <p class="lede">Every trophy name, description and grade is the official PlayStation 5 list as Exophase and PSNProfiles published it before this guide was built (frozen 18 November 2026): 55 trophies, 1 platinum, 2 gold, 6 silver, 46 bronze, 28 hidden. The guides are this entry's own words, built from those official descriptions. Where a community guide is the source of a claim, it is named beside that trophy's guide — a source is cited, never copied.</p>
+    <h3>What each guide says about its own certainty</h3>
+    <ul class="habits">
+      <li><strong>From the description alone:</strong> most guides follow directly from what the official description asks — a count, a place, a mission name. No in-game check was possible; the game is a day old.</li>
+      <li><strong>Flagged, not confirmed:</strong> the one possibly missable trophy and the cheat warning come from PowerPyx / GTABase as reported by EGamers and GTAScoop, and Planet GTA 6 notes no reliable missables list exists yet.</li>
+      <li><strong>Not confirmed in the game:</strong> the five cryptic trophies (Personal Best, Actions Speak Louder, Bad Luck I Guess, The Truth Is Out There, Let's Go Bowling) give no actionable instruction in their descriptions, so their guides say what the description suggests and mark the method unconfirmed rather than inventing steps.</li>
+    </ul>
+    <h3>Sources used</h3>
+    <ul class="sources" id="sourceList"></ul>
+    <h3>About this guide</h3>
+    <p>An offline static web app: no network requests, no account, no tracking. Your checklist is saved in this browser (localStorage) and can be exported to a file and imported back. The look is original — no Rockstar logo, no official artwork, no game screenshots. For the judge: the screenshots of this guide show the checklist with a guide open, the roadmap, and the missables page.</p>
+    <p class="fine">Grand Theft Auto, GTA and Rockstar Games are trademarks of their owners. This is an unofficial fan guide, not affiliated with or endorsed by Rockstar Games or Sony Interactive Entertainment.</p>
+  </section>
+</main>
+
+<footer>
+  <p>Progress is saved in this browser only. <span id="demoNote" hidden>Demo progress shown — tick trophies to save your own.</span> Offline: this page loads no network resources.</p>
+</footer>
+
+<script type="module" src="js/app.js"></script>
+</body>
+</html>
